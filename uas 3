@@ -1,0 +1,24 @@
+# Contoh program menggunakan perulangan for panjang
+total = 0
+
+for i in range(1, 11):
+    if i % 2 == 0:
+        total += i
+    else:
+        total -= i
+
+print("Total hasil operasi: ", total)
+
+# Contoh program lain dengan perulangan for panjang
+kata = "OpenAI is amazing!"
+
+for char in kata:
+    if char.isalpha():
+        if char.isupper():
+            print(f"{char} adalah huruf besar.")
+        else:
+            print(f"{char} adalah huruf kecil.")
+    elif char.isdigit():
+        print(f"{char} adalah angka.")
+    else:
+        print(f"{char} adalah karakter khusus.")
